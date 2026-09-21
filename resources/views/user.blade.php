@@ -70,7 +70,9 @@
 
 
          <div>
-            Total Users: {{$userData->total()}}
+            {{--  Total Users: {{$userData->total()}}  --}}
+            <br>
+            {{--  Current Page: {{$userData->currentPage()}}  --}}
          </div>
     </div>
 

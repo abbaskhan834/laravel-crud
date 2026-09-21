@@ -22,7 +22,7 @@ class UserController extends Controller
     }
 
     public function ShowUser(){
-        $users = DB::table('users')->get();
+        $users = DB::table('users')->paginate(2)->fragment('user');
         return view('/user',['userData' => $users]);
     }
 

@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awsome.css') }}">
 
+
+    
 </head>
+<style>
+  nav .w-5{
+    display: none;
+  }
+</style>
+
 <body>
     
     <div class="container">
@@ -54,9 +62,16 @@
         </td>
         </tr>
          @endforeach
-    
-
+        
     </table>
+    <div class="mt-5">
+            {{$userData->links()}}
+         </div>
+
+
+         <div>
+            Total Users: {{$userData->total()}}
+         </div>
     </div>
 
 
